@@ -9,15 +9,18 @@
     margin: auto;
 }
 header{
-    margin-top: 1rem;
+    margin: 2.77rem 0 2.52rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search-imput{
+.imput{
     border-radius: 0.125rem;
     border: 1px solid #D9D9D9;
     background:#FFF;
+    color: #bfbfbf;
+}
+.search-imput{
     width:43.1rem;
     height: 2.5rem;
     font-size: 16px;
@@ -44,4 +47,115 @@ header{
     color: #FFF;
     padding-left: 2.25rem;
     margin-right: 0.63rem;
+}
+.promo{
+    border-radius: 0.625rem;
+    background: #FFF1B8 url(../img/promo_bg.png) no-repeat right  center;
+}
+.main-text{
+    padding: 4.95rem 0 4.95rem 4.43rem;
+}
+.promo .main-text .title{
+    font-size: 2.4375rem;
+    font-weight: 700;
+    padding-bottom: 0.96rem;
+}
+.promo .main-text .text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.rests{
+    margin-top: 3.5rem;
+}
+.rests .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rests .heading .title{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.rests .heading .rests-imput{
+    background: url("../img/search.svg") no-repeat left 0.62rem center;
+    width: 19.1rem;
+    height: 2.13rem;
+    padding-left: 2rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.cards .card{
+    max-width: 23.6rem;
+    max-height: 24rem;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+}
+.card .card-image{
+    border-radius: 0.4375rem 0.4375rem 0rem 0rem;
+    max-width: 24rem;
+    max-height: 15.625rem;
+    margin-bottom: 1.29rem;
+    object-fit: cover;
+}
+.card .card-text .card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.62rem;
+}
+.card .card-text .card-title .card-name{
+    color: #000;
+    font-weight: 700;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.card .card-text .card-title .time-for-cook{
+    max-height: 1.38rem;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #fff;
+    background: #000;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 0.125rem;
+}
+.card .card-text .card-info{
+    margin-bottom: 2.19rem;
+}
+.card .card-text .card-info, .rate{
+    display: flex;
+    align-items: center;
+}
+.card .card-text .card-info .rate .rate-float{
+    margin-left: 0.25rem;
+    color: #FFC107;
+    font-weight: 700;
+    line-height: 2rem;
+    font-size: 1.125rem;
+}
+.card-info .pricelist{
+    margin-left: 1.62rem;
+    display: flex;
+}
+.card-info .pricelist .price{
+    color:#8C8C8C;
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 1.125rem;
+    margin-right: 0.5rem;
+}
+.price-coll::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8c8c8c;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 0.5rem;
 }
