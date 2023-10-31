@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery Food - Доставка еды на дом</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +16,7 @@
             <input type="text" class="imput search-imput"  placeholder="Адрес доставки">
             <div class="buttons">
                 <button class="button user">Войти</button>
-                <button class="button shopping-cart">Корзина</button>
+                <button class="button shopping-cart" id="cart-button">Корзина</button>
             </div> 
         </header>
 
@@ -35,7 +36,7 @@
             </div>
             
             <div class="cards">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInUp">
                     <img src="img/roll-eel.jpg" alt="" class="product-image">
 
                     <h3 class="product-name">Ролл угорь стандарт</h3>
@@ -48,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card animate__animated animate__fadeInUp">
                     <img src="img/california.jpg" alt="" class="product-image">
 
                     <h3 class="product-name">Калифорния лосось стандарт</h3>
@@ -60,7 +61,7 @@
                         <p class="product-price">395 ₽</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__fadeInUp">
                     <img src="img/okinava.jpg" alt="" class="product-image">
 
                     <h3 class="product-name">Окинава стандарт</h3>
@@ -72,7 +73,7 @@
                         <p class="product-price">250 ₽</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__fadeInUp">
                     <img src="img/cesar-maki.jpg" alt="" class="product-image">
 
                     <h3 class="product-name">Цезарь маки хl</h3>
@@ -84,7 +85,7 @@
                         <p class="product-price">250 ₽</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__fadeInUp">
                     <img src="img/jasai-maki.jpg" alt="" class="product-image">
 
                     <h3 class="product-name">Ясай маки стандарт 185 г</h3>
@@ -96,7 +97,7 @@
                         <p class="product-price">250 ₽</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__fadeInUp">
                     <img src="img/roll-shrimp.jpg" alt="" class="product-image">
 
                     <h3 class="product-name">Ролл с креветкой стандарт</h3>
@@ -130,6 +131,63 @@
             </div>
         </footer>
     </div>
-      
+    
+    <div class="modal animate__animated animate__fadeInUp">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close">&times</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <span class="pricetag">1250 ₽</span>
+                <div class="footer-buttons">
+                    <button class="buy button">Оформить заказ</button>
+                    <button class="cancel button">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
